@@ -106,6 +106,10 @@ def get_events():
 def health_check():
     """Health check endpoint"""
     return jsonify({'status': 'healthy', 'timestamp': datetime.utcnow().isoformat()}), 200
+    
+@app.route('/', methods=['GET'])
+def index():
+    return jsonify({'message': 'Webhook server is running'}), 200
 
 if __name__ == '__main__':
     port = int(os.getenv('FLASK_PORT', 5000))
