@@ -166,10 +166,3 @@ The system includes:
 - Real-time status indicators in the frontend
 - Automatic reconnection on network issues
 
-## 🔒 Security Considerations
-
-- Validate webhook signatures from GitHub
-- Use HTTPS in production
-- Implement proper CORS policies
-- Sanitize all user inputs
-- Use environment variables for sensitive data
